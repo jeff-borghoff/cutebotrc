@@ -10,5 +10,5 @@ let yValue = 0
 let xValue = 0
 radio.setGroup(1)
 basic.forever(function () {
-    CutebotPro.pwmCruiseControl(yValue - xValue, yValue + xValue)
+    CutebotPro.pwmCruiseControl(yValue + xValue, yValue - xValue)
 })
